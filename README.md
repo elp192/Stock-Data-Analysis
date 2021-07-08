@@ -18,7 +18,7 @@ Steve‘s parents were interested in DQ stock. Results show that for this stock,
 </p>
 
 ### Analysis of refactoring code
-Two modules with the same outputs (Figure 1) are created in [green_stocks.xlsm]. In the following, the difference between these modules and the time of execution are discussed.<br>
+Two modules with the same outputs (Figure 1) are created in [green_stocks.xlsm](https://github.com/elp192/Stock-Data-Analysis/blob/50c9409feb6822236020c77917219d66479b64d7/green_stocks.xlsm). In the following, the difference between these modules and the time of execution are discussed.<br>
 The main difference between the two modules is that in Module 2, Module 1's code is refactored in which the nested loop is substituted by the For loops. Figures 3 and 4 (left) represent part of the code before refactoring and after refactoring, respectively. As shown in Figure 3 (left), in the outer For loop, two different worksheets are activated in each iteration, which can increase the execution time. However, Figure 4 (left) shows the refactored code that the inner loop is eliminated, and an array named ticker volume and a variable called ticker index are defined. In addition, to store the outputs in a worksheet, another separated For loop is created. Figures 3 and 4 (right) show that after refactoring code, the execution time is decreased from 0.62 seconds to 0.11 seconds.<br>
 
 <p img align="center" width="100%">
@@ -33,7 +33,7 @@ The main difference between the two modules is that in Module 2, Module 1's code
 </p> 
 
 ## Summary
-**The advantages and disadvantages of refactoring code**
+### The advantages and disadvantages of refactoring code
 Code refactoring is an important process in computer programming to reorganize the code that its behavior remains the same. the advantages and disadvantages of refactoring code, in general, are as follows:<br>
 :+1: **Advantages**:<br>
 :white_small_square: Refactoring code helps to decrease the execution time and makes the code as efficient as possible.<br>
